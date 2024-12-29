@@ -3,9 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz about Poland</title>
+    <link rel="stylesheet" href="zuzanna.css">
 </head>
 <body>
+    <header class="header">
+        <h1>Quiz about Poland</h1>
+    </header>
+
+    <div class="quiz-container">
+        <h1>Zuzanna's Quiz</h1>
+        <form>
+            <div class="visitor">
+                <label for="firstName">First Name *:</label>
+                <input type="text" id="firstName">
+
+                <label for="lastName">Last Name *:</label>
+                <input type="text" id="lastName">
+
+                <label for="email">Email *:</label>
+                <input type="email" id="email">
+        
+            </div>
+
+            <fieldset class="question">
+                <legend>1. What is the capital of Poland?</legend>
+                <label><input type="radio" value="Warsaw"> Warsaw</label><br>
+                <label><input type="radio" value="Krakow"> Krakow</label><br>
+                <label><input type="radio" value="Gdansk"> Gdansk</label><br>
+                <label><input type="radio" value="Wroclaw"> Wroclaw</label>
+            </fieldset>
+
+            <fieldset class="question">
+                <legend>2. Which of these cities are located in Poland? </legend>
+                <label><input type="checkbox" value="Warsaw"> Warsaw</label><br>
+                <label><input type="checkbox" value="Berlin"> Berlin</label><br>
+                <label><input type="checkbox" value="Krakow"> Krakow</label><br>
+                <label><input type="checkbox" value="Rome"> Rome</label><br>
+                <label><input type="checkbox" value="Gdansk"> Gdansk</label>
+            </fieldset>
+
+            <fieldset class="question">
+                <legend>3. Who is the president of Poland?</legend>
+                <input type="text">
+            </fieldset>
+
+            <fieldset class="question">
+                <legend>4. What is the currency of Poland? </legend>
+                <label><input type="radio" value="Zloty"> Zloty</label><br>
+                <label><input type="radio" value="Euro"> Euro</label><br>
+                <label><input type="radio" value="Pound"> Pound</label><br>
+                <label><input type="radio" value="Dollar"> Dollar</label>
+                
+            </fieldset>
+
+            <fieldset class="question">
+                <legend>5. Which of the following are Polish Nobel Prize winners?</legend>
+                <label><input type="checkbox" value="Marie Curie"> Marie Curie</label><br>
+                <label><input type="checkbox" value="Lech Walesa"> Lech Walesa </label><br>
+                <label><input type="checkbox" value="Albert Einstein"> Albert Einstein </label><br>
+                <label><input type="checkbox" value="Wisława Szymborska"> Wisława Szymborska</label><br>
+            </fieldset>
+
+            <fieldset class="question">
+                <legend>6. Which of the following dishes are traditional dishes in Poland?</legend>
+                <label><input type="checkbox" value="Pierogi"> Pierogi </label><br>
+                <label><input type="checkbox" value="Pizza"> Pizza </label><br>
+                <label><input type="checkbox" value="Barszcz"> Barszcz </label><br>
+                <label><input type="checkbox" value="Zurek"> Zure k </label><br>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+            
+        </form>
+    </div>
     
+
+    <script src="zuzanna.js"></script>
 </body>
 </html>
+

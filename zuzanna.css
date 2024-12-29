@@ -1,0 +1,28 @@
+/* Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+
+.header {
+    background-color: #d32f2f; 
+    color: white; 
+    text-align: center;
+    padding: 20px;
+    height: 30vh;
+    align-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
