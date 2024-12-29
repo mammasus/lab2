@@ -12,22 +12,22 @@
     </header>
 
     <div class="quiz-container">
-        <h1>Zuzanna's Quiz</h1>
-        <form>
-            <div class="visitor">
-                <label for="firstName">First Name *:</label>
+        
+        <form id="quizForm">
+            <div class="visitor-data">
+                <label for="firstName">First Name <span class="required">*</span> </label>
                 <input type="text" id="firstName">
 
-                <label for="lastName">Last Name *:</label>
+                <label for="lastName">Last Name <span class="required">*</span> </label>
                 <input type="text" id="lastName">
 
-                <label for="email">Email *:</label>
+                <label for="email">Email <span class="required">*</span> </label>
                 <input type="email" id="email">
         
             </div>
 
             <fieldset class="question">
-                <legend>1. What is the capital of Poland?</legend>
+                <legend>1. What is the capital of Poland? <span class="required">*</span> </legend>
                 <label><input type="radio" value="Warsaw"> Warsaw</label><br>
                 <label><input type="radio" value="Krakow"> Krakow</label><br>
                 <label><input type="radio" value="Gdansk"> Gdansk</label><br>
@@ -45,11 +45,11 @@
 
             <fieldset class="question">
                 <legend>3. Who is the president of Poland?</legend>
-                <input type="text">
+                <input type="text" class="long">
             </fieldset>
 
             <fieldset class="question">
-                <legend>4. What is the currency of Poland? </legend>
+                <legend>4. What is the currency of Poland? <span class="required">*</span> </legend>
                 <label><input type="radio" value="Zloty"> Zloty</label><br>
                 <label><input type="radio" value="Euro"> Euro</label><br>
                 <label><input type="radio" value="Pound"> Pound</label><br>
