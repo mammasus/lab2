@@ -3,6 +3,7 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
+    box-sizing: border-box;
 }
 
 .header {
@@ -20,7 +21,14 @@ h1 {
     margin: 0;
     text-align: center;
 }
-
+h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+}
+p{
+  font-style: italic;  
+}
 
 .quiz-container {
     background-color: #fff;
@@ -55,6 +63,7 @@ label, p, legend {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
+
 }
 
 input {
@@ -66,6 +75,7 @@ input {
 
 .long{
     width:95%;
+
 }
 
 
@@ -108,7 +118,7 @@ legend {
 @media (max-width: 768px) {
     .header {
         padding: 15px;
-        height: auto; 
+        height: 10vh; 
     }
 
     h1 {
@@ -155,4 +165,18 @@ legend {
     button {
         font-size: 14px;
     }
+}
+
+
+.error {
+    color: red;
+    font-size: 14px;
+    height: 20px;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    color:green;
 }
