@@ -4,15 +4,10 @@ form.addEventListener('submit', function(event) {
     event.preventDefault();  //the form won't reload the page
     let errors = false;
 
-
-  
-   
-
     const errorElements = document.querySelectorAll('.error');
     for (let element of errorElements) {
     element.textContent = ''; //Clears the previous errors
 }
-
 
 
     // Validate first name
@@ -39,10 +34,9 @@ form.addEventListener('submit', function(event) {
 
 
 
-
     // Validate required questions
     if (!document.querySelector('input[name="q1"]:checked')) {
-        document.getElementById('q1Error').textContent = 'Please select an answer for question 1.';
+        document.getElementById('question1Error').textContent = 'Please select an answer for question 1.';
         errors = true;
     }
 
