@@ -14,7 +14,7 @@
 
     <div class="quiz-container">
         <h2>Personal info</h2>
-        <form id="quizForm">
+        <form id="quizForm" novalidate>
             <div class="visitor-data">
                 <label for="firstName">First Name <span class="required">*</span> </label>
                 <input type="text" id="firstName" required>
@@ -57,8 +57,9 @@
             </fieldset>
 
             <fieldset class="question">
-                <legend>3. Who is the president of Poland?</legend>
+                <legend>3. Who is the president of Poland? <span class="required">*</span> </legend>
                 <input type="text" name="q3" class="long">
+                <p class="error" id="question3Error"></p>
                 
             </fieldset>
 

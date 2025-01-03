@@ -45,6 +45,12 @@ form.addEventListener('submit', function(event) {
         errors = true;
     }
 
+  
+   const question3answer = document.querySelector('input[name="q3"]').value;
+   if (!question3answer) {
+       document.getElementById('question3Error').textContent = 'Please provide an answer for question 3.';
+       errors = true;
+   }
    
 
  //Showing the green succesful text when there are no errors
